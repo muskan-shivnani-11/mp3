@@ -1,6 +1,8 @@
 {
-  "name": "llamaio-todo-api",
+  "name": "mp3_starter",
   "version": "1.0.0",
+  "description": "MP3 Starter for CS409 Fall 2025",
+  "author": "Muskan Shivnani <mns9@illinois.edu>",
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=development nodemon src/server.js",
