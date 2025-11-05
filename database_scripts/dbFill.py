@@ -84,7 +84,7 @@ def main(argv):
         # Pick a random first name and last name
         x = randint(0,99)
         y = randint(0,99)
-        params = urllib.parse.urlencode({'name': firstNames[x] + " " + lastNames[y], 'email': firstNames[x] + "@" + lastNames[y] + ".com"})
+        params = urllib.parse.urlencode({'name': firstNames[x] + " " + lastNames[y], 'email': f"{firstNames[x]}{i}@{lastNames[y]}.com"})
 
         # POST the user
         conn.request("POST", "/api/users", params, headers)
